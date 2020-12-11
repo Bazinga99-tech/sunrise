@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: sunrise.HelloControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 8.009 sec <<< FAILURE! - in sunrise.HelloControllerTest
+testHello(sunrise.HelloControllerTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.ValidationException
+
+testCalc(sunrise.HelloControllerTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.ValidationException
+
